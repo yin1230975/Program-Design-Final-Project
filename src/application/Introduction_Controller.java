@@ -97,9 +97,9 @@ public class Introduction_Controller implements Initializable{
 		f = null;
 		variables = null;
 		Data = null;
-		NumberAxis xaxis = new NumberAxis();
-		NumberAxis yaxis = new NumberAxis();
-		LineChart linechart = new LineChart(xaxis,yaxis);
+		xaxis = new NumberAxis();
+		yaxis = new NumberAxis();
+		linechart = new LineChart(xaxis,yaxis);
 		chartinscene.getChildren().clear();
 		csvbutton.setDisable(true);
 		grouptextbox.setDisable(true);
