@@ -6,7 +6,7 @@
 
 ### [commons-math 3.6.1 下載](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip)
 
-## 範例CSV檔案(在/src/application/)
+## 範例CSV檔案(在\src\application\*.csv)
 
 ### 主畫面點Linear Model    &rarr;   點Choose file  &rarr; 選擇 mtcars.csv 
 
