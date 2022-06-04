@@ -1,1 +1,10 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+    -fx-background-color: "darkgray";
+}
+
+.button{
+    -fx-background-radius:20em;
+    -fx-background-color: "dimgray";
+    -fx-font-size: 15;
+    -fx-font-weight:bold;
+}

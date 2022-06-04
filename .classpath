@@ -16,17 +16,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/yinziwei/Downloads/Weka-3-8-6/weka.jar">
+	<classpathentry kind="lib" path="C:/Users/Hank/Downloads/Weka-3-8-6/Weka-3-8-6/weka.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1-javadoc.jar"/>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1-sources.jar"/>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1-test-sources.jar"/>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1-tests.jar"/>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1-tools.jar"/>
-	<classpathentry kind="lib" path="/Users/yinziwei/commons-math3-3.6.1/commons-math3-3.6.1.jar">
+	<classpathentry kind="lib" path="C:/Users/Hank/Downloads/PD_Final_LM/PD_Final_LM/commons-math3-3.6.1/commons-math3-3.6.1.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

@@ -11,8 +11,10 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
@@ -33,6 +35,8 @@ import org.apache.commons.math3.stat.inference.TTest;
 
 import java.lang.Math;
 public class Introduction_Controller implements Initializable{
+	private Stage stage;
+	private Scene scene;
 	private Set<String> checktwogroup = new LinkedHashSet <>();
 	private int groupindex=1,obsindex=2;
 	public File f;
@@ -115,6 +119,12 @@ public class Introduction_Controller implements Initializable{
 	
 	@FXML
 	void backtomain(ActionEvent event) throws IOException{
+		Parent root = FXMLLoader.load(getClass().getResource("/application/MainScene.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	
