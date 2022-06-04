@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Introduction_Controller">
+   <children>
+      <Button fx:id="csvbutton" layoutX="42.0" layoutY="90.0" mnemonicParsing="false" onAction="#choosecsv" text="Choose a CSV file" />
+      <Button fx:id="testbutton" layoutX="356.0" layoutY="27.0" mnemonicParsing="false" onAction="#confirmtest" text="confirm" />
+      <RadioButton fx:id="twosample" layoutX="37.0" layoutY="31.0" mnemonicParsing="false" selected="true" text="Two-sample t-test">
+         <toggleGroup>
+            <ToggleGroup fx:id="Ttest" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="pair" layoutX="188.0" layoutY="31.0" mnemonicParsing="false" text="Paired-sample t-test" toggleGroup="$Ttest" />
+      <TextField fx:id="grouptextbox" layoutX="188.0" layoutY="90.0" />
+      <TextField fx:id="obstextbox" layoutX="356.0" layoutY="90.0" />
+      <Label fx:id="col_label1" alignment="CENTER" layoutX="228.0" layoutY="67.0" text="group column" />
+      <Label fx:id="col_label2" alignment="CENTER" layoutX="379.0" layoutY="67.0" text="observation column" />
+      <Button fx:id="columnbutton" layoutX="534.0" layoutY="90.0" mnemonicParsing="false" onAction="#confirmdata" text="ok" />
+      <Label fx:id="problem" alignment="CENTER" layoutX="42.0" layoutY="149.0" prefHeight="158.0" prefWidth="382.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="executebutton" layoutX="180.0" layoutY="315.0" mnemonicParsing="false" onAction="#execute" prefHeight="23.0" prefWidth="114.0" text="Execute test" />
+      <Label fx:id="statement" alignment="CENTER" layoutX="53.0" layoutY="348.0" prefHeight="128.0" prefWidth="382.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <FlowPane fx:id="chartinscene" alignment="CENTER_LEFT" layoutX="447.0" layoutY="126.0" prefHeight="356.0" prefWidth="359.0" />
+      <TextField fx:id="meanbox" layoutX="508.0" layoutY="519.0" onAction="#changemean" prefHeight="23.0" prefWidth="88.0" text="0" />
+      <Label layoutX="517.0" layoutY="557.0" text="mean(-5~5)" />
+      <Label layoutX="639.0" layoutY="557.0" text="sigma(0~3)" />
+      <TextField fx:id="sigmabox" layoutX="627.0" layoutY="519.0" onAction="#changesigma" prefHeight="23.0" prefWidth="88.0" text="1" />
+      <Button fx:id="clearbutton" layoutX="749.0" layoutY="519.0" mnemonicParsing="false" onAction="#clearpane" text="clear" />
+      <Button fx:id="restartbutton" layoutX="677.0" layoutY="47.0" mnemonicParsing="false" onAction="#restartall" text="restart" />
+      <Button fx:id="backbutton" layoutX="684.0" layoutY="90.0" mnemonicParsing="false" onAction="#backtomain" text="back" />
+   </children>
+</AnchorPane>
