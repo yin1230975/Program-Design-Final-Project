@@ -14,4 +14,4 @@
 
 ### 主畫面點Introduction    &rarr;   選擇two-sample t-test 點confirm  &rarr;   點Choose file  &rarr; 選擇 ttest_reject.csv/ttest_noreject.csv
 
-### 主畫面點Introduction    &rarr;   選擇pair t-test 點confirm        &rarr;   點Choose file  &rarr; 選擇 -pair_reject.csv/pair_noreject.csv
+### 主畫面點Introduction    &rarr;   選擇pair t-test 點confirm        &rarr;   點Choose file  &rarr; 選擇 pair_reject.csv/pair_noreject.csv
