@@ -8,4 +8,4 @@
 
 ## 範例CSV檔案
 
-### 主畫面點Linear Model    &rarr   點Choose file  &rarr 選擇 mtcars.csv 
+### 主畫面點Linear Model    &rarr   點Choose file  &rarr; 選擇 mtcars.csv 
