@@ -6,11 +6,11 @@
 
 ### [commons-math 3.6.1 下載](https://dlcdn.apache.org//commons/math/binaries/commons-math3-3.6.1-bin.zip)
 
-## 範例CSV檔案
+## 範例CSV檔案(在/src/application/底下)
 
 ### 主畫面點Linear Model    &rarr;   點Choose file  &rarr; 選擇 mtcars.csv 
 
-### 主畫面點Clustering      &rarr;   點Choose file  &rarr; 選擇 iris.2D.csv
+### 主畫面點Clustering      &rarr;   點Choose file  &rarr; 選擇 WAIS.csv
 
 ### 主畫面點Introduction    &rarr;   選擇two-sample t-test 點confirm  &rarr;   點Choose file  &rarr; 選擇 ttest_reject.csv/ttest_noreject.csv
 
