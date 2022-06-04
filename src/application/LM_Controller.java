@@ -53,6 +53,8 @@ public class LM_Controller implements Initializable{
 	@FXML
 	private Button nextButton;
 	@FXML
+	private Button chooseCSVButton;
+	@FXML
 	private Text t1;
 	@FXML
 	private Text t2;
@@ -95,6 +97,7 @@ public class LM_Controller implements Initializable{
 	    t2.setVisible(true);
 	    dependentVar.setVisible(true);
 	    sendDependentVar.setVisible(true);
+	    chooseCSVButton.setVisible(false);
 	    variableList.setText(printVar);
 	}
 	
@@ -130,7 +133,7 @@ public class LM_Controller implements Initializable{
 			}
 			System.out.print(i);
 			
-			if(i<est.length-1) model = model + "+";
+			if(i<est.length-1 && Double.parseDouble(est[i+1])>0) model = model + "+";
 		}
 		System.out.print("f");
 		Parent root = FXMLLoader.load(getClass().getResource("/application/LM_Scene2.fxml"));	

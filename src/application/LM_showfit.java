@@ -10,9 +10,15 @@ import org.apache.commons.math3.stat.regression.OLSMultipleLinearRegression;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 
 public class LM_showfit  implements Initializable{
@@ -23,12 +29,30 @@ public class LM_showfit  implements Initializable{
 	@FXML
 	private Label variableSelectionWarn;
 	
-	@FXML TextField removeVariable;
+	@FXML 
+	private TextField removeVariable;
+
+	@FXML
+	private Button exit;
+	
+	private Stage stage;
+	private Scene scene;
 	
 	@Override 
 	public void initialize(URL arg0,ResourceBundle arg1) {
 		l1.setText(LM_Controller.model);
 		variableSelectionWarn.setText(LM_Controller.warnMessage);
+	}
+	
+	@FXML
+	public void Exit(ActionEvent event) throws IOException
+	{
+		Parent root = FXMLLoader.load(getClass().getResource("/application/MainScene.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		scene = new Scene(root);
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@FXML
@@ -86,7 +110,7 @@ public class LM_showfit  implements Initializable{
 			if(notSignificant[i]) warnMessage = warnMessage+LM_Controller.variableArray[reserveList[i-1]]+" not significant\n";
 			model = model+ est[i]+LM_Controller.variableArray[reserveList[i-1]];
 			
-			if(i<est.length-1) model = model + "+";
+			if(i<est.length-1 && temp[i+1]>0) model = model + "+";
 		}
 		l1.setText(model);
 		variableSelectionWarn.setText(warnMessage);

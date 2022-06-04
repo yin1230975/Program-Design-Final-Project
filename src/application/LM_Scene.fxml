@@ -9,17 +9,26 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LM_Controller">
    <children>
-      <Text layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LM Scene" wrappingWidth="225.21630859375">
+      <Text layoutX="30.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Linear Model" wrappingWidth="287.21630859375">
          <font>
-            <Font size="36.0" />
+            <Font size="48.0" />
          </font>
       </Text>
-      <Button layoutX="192.0" layoutY="26.0" mnemonicParsing="false" onAction="#chooseCSV" prefHeight="25.0" prefWidth="127.0" text="Choose a  CSV file" />
+      <Button fx:id="chooseCSVButton" layoutX="254.0" layoutY="167.0" mnemonicParsing="false" onAction="#chooseCSV" prefHeight="25.0" prefWidth="127.0" text="Choose a  CSV file" />
       <Button fx:id="nextButton" layoutX="475.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToFitted" prefHeight="26.0" prefWidth="99.0" text="Next" />
-      <Label fx:id="variableList" layoutY="83.0" text="Label" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0" />
-      <Text fx:id="t1" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variables:" wrappingWidth="105.21630859375" />
-      <TextField fx:id="dependentVar" layoutY="188.0" />
-      <Text fx:id="t2" layoutX="2.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dependent Variables:" />
-      <Button fx:id="sendDependentVar" layoutX="185.0" layoutY="188.0" mnemonicParsing="false" onAction="#setDependentVar" text="send" />
+      <Label fx:id="variableList" layoutX="63.0" layoutY="94.0" prefHeight="47.0" prefWidth="538.0" text="Label" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="94.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Text fx:id="t1" layoutX="42.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Variables:" wrappingWidth="159.5">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <TextField fx:id="dependentVar" layoutX="63.0" layoutY="187.0" />
+      <Text fx:id="t2" layoutX="42.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dependent Variables:">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Button fx:id="sendDependentVar" layoutX="63.0" layoutY="213.0" mnemonicParsing="false" onAction="#setDependentVar" text="send" />
    </children>
 </AnchorPane>
